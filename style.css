@@ -1,0 +1,429 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Playfair Display", serif;
+}
+
+a {
+   text-decoration: none; 
+}
+
+ul {
+    list-style: none;
+}
+
+/* .active {
+    color: pink;
+    text-decoration: none;
+    font-weight: bold;
+   
+} */
+
+body, html {
+    overflow-x: hidden;
+}
+
+/* NAV BAR */
+
+#navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    
+    width: 100%;
+    justify-content:flex-end;
+    padding: 20px;
+    color: whitesmoke;
+    
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+
+.nav-links li {
+    margin:0 30px;
+}
+
+.nav-links a {
+    color:white;
+    display: flex;
+    align-items: center;
+
+}
+/* End of navbar */
+/* start header */
+#header {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('./img/IMG_4208.jpeg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo {
+    width: 80px;
+    position:absolute;
+    top:4%;
+    left:1%;
+}
+
+.header-content {
+    margin-bottom: 150px;
+    color: whitesmoke;
+    text-align: center;
+    padding-top: 180px;
+}
+
+.header-content h2 {
+    font-size: 4vmin;
+
+}
+
+.line {
+    width: 150px;
+    height: 4px;
+    background: pink;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+.header-content h1 {
+    font-size: 7vmin;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    padding: 8px 15px;
+    background: pink;
+    border-radius: 30px;
+    color:whitesmoke;
+}
+
+/* Events */
+#events {
+    width: 100%;
+    padding:70px 0;
+}
+
+.title {
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 70px;
+}
+
+
+.row {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+.col {
+    float:left;
+    width: 50%;
+    padding: 5px;
+}
+
+
+.img-event {
+    max-width: 100%;
+    height: 450px;
+    width: auto;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+
+
+.row::after {
+    content: "";
+    display: grid;
+    clear: both;
+}
+
+.events .row {
+    margin-top: 50px;
+}
+
+h4 {
+    font-size: 3vmin;
+    color: blueviolet;
+    margin: 20px auto;
+}
+
+.events-paragraf {
+    color: cadetblue;
+    padding: 0px 40px;
+    margin-bottom: 30px;
+}
+
+/* explore section */
+
+
+#explore {
+width: 100%;
+height: 100vh;
+background-image: url('./img/IMG_4050.jpeg');
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+display: flex;
+align-items: center;
+}
+
+.explore-content {
+    width: 60%;
+    padding: 50px;
+    color: aliceblue;
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+    
+}
+
+.explore-content h1 {
+font-size: 7vmin;
+margin:50px;
+}
+
+.explore-content p {
+    color: white;
+}
+
+.explore-content .btn {
+    color: white;
+}
+
+
+
+/* Contact form */
+
+.container {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 400px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+}
+
+input, textarea {
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+
+/* Map section */
+
+#map-container {
+    margin-top: 50px;
+    height: 400px; 
+    width: 100%;
+}
+/* newsletter */
+
+#newsletter {
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+#newsletter h2 {
+    margin-bottom: 10px;
+}
+
+.newsletter-form {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* social-links */
+#social-links {
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+#social-links h2 {
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+/* Social Icon Styles */
+.social-icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+    
+}
+
+.facebook {
+    background-image:url('./img/facebook.png');
+}
+
+.twitter {
+    background-image: url('./img/twitter.png');
+}
+
+.instagram {
+    background-image: url('./img/instagram.png');
+}
+   /* Footer */
+
+.footer {
+    width: 100%;
+    min-height: 100px;
+    padding: 20px 80px;
+    margin:0;
+    background: green;
+    text-align: center;
+}
+
+.footer p {
+    color: whitesmoke;
+    margin: 20px auto;
+    padding: 20px auto;
+}
+
+
+
+/* mobile device  */
+@media only screen and (max-width:850px) {
+        #navbar {
+           padding: 0;
+        }
+
+        .logo {
+            position: absolute;
+            top: 30px;
+            left: 30px;
+        }
+        .nav-links {
+            flex-direction: column;
+            width: 100%;
+            height: 100vh;
+            justify-content: center;
+            background-color:hotpink ;
+            
+        }
+        
+        .nav-links li {
+            margin: 30px auto;
+        }
+
+        /* Upcoming events */
+        .row {
+            flex-direction: column;
+        }
+
+        .row .col {
+            margin:20px auto;
+        }
+        .col {
+            justify-content: center;
+            align-items: center;
+        }
+
+        .col img {
+            max-width: 90%;
+        }
+
+        /* explore section */
+        .explore-content {
+            width: 100%;
+        }
+
+        /* footer */
+        
+        .footer {
+            padding: 10px;
+        }
+
+    /* Animations */
+
+    .img-event {
+        transition: transfrom .3s ease;
+    }
+
+    .img-event:hover {
+        transform: scale(1.1);
+    }
+}
