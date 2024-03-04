@@ -1,3 +1,4 @@
+// contact
 function submitForm() {
     const firsName=document.getElementById("first-name").value
     const lastName=document.getElementById("last-name").value
@@ -14,9 +15,10 @@ function submitForm() {
 function displaySubmissionCount(){
     const submissionCount=localStorage.length
     document.getElementById("submission-count").innerText=`Total submissions: ${submissionCount.toString()}`;
-    console.log("Hello");
+
 }
 window.onload=function(){
 displaySubmissionCount()
 }
+
 

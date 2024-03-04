@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Captures from reality</title>
     <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+    <script src="carousell.js" defer></script>
 </head>
 <body>
     <!-- Nav bar -->
@@ -21,7 +23,6 @@
     <!-- end of navbar -->
     <!-- header start -->
     <header id="header">
-        <div class="slider-container" id="sliderContainer"></div>
         <section>
             <h1 class="logo">CAPTURES FROM REALITY</h1>
             <div class="header-content">
@@ -67,6 +68,24 @@
             <a href="#" class="btn">Learn more</a>
         </div>
     </section>
+    <!-- carousell section -->
+    <section aria-label="Photos">
+        <div class="carousell" data-carousell>
+           <button class="carousell-btn prev" data-carousell-btn="prev">&#8592;</button>
+           <button class="carousell-btn next" data-carousell-btn="next">&#8594;</button>
+        <ul data-slides>
+            <li class="slide" data-active>
+                <img src="./img/1.jpeg" alt="image #1">
+            </li>
+            <li class="slide">
+                <img src="./img/2.jpeg" alt="image #2">
+            </li>
+            <li class="slide">
+                <img src="./img/4.jpeg" alt="image #3">
+            </li>
+        </ul>
+    </div>
+    </section>
 <!-- Map section -->
     <section id="map">
         <h2>My Location</h2>
@@ -78,7 +97,6 @@
                 frameborder="0"
                 style="border:0"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11130.543150333335!2d23.610944016432203!3d45.77848893728988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x474c3adf435c7637%3A0x9018ca1c6c60c9b!2s517775%20%C8%98ugag!5e0!3m2!1sro!2sro!4v1707138517041!5m2!1sro!2sro" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" defer></iframe>      
-        
             </div>
     </section>
 <!-- newsletter -->
